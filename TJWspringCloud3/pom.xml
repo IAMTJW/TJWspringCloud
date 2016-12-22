@@ -1,40 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<!-- <parent>
+	<parent>
 		<groupId>com.tianjunwei</groupId>
-		<artifactId>TTspringCloud</artifactId>
+		<artifactId>TJWspringCloud</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-	</parent> -->
+	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tianjunwei</groupId>
-	<artifactId>TTspringCloud-zookeeper</artifactId>
+	<artifactId>TJWspringCloud-RegisterServer</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>TTspringCloud-zookeeper</name>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.2.4.RELEASE</spring.version>
-		<jedis.version>2.8.0</jedis.version>
-		<junit.version>4.12</junit.version>
-	</properties>
-	<dependencyManagement>
-    	<dependencies>
-	        <dependency>
-	            <groupId>org.springframework.cloud</groupId>
-	            <artifactId>spring-cloud-zookeeper-dependencies</artifactId>
-	            <version>1.0.1.RELEASE</version>
-	            <type>pom</type>
-	            <scope>import</scope>
-	        </dependency>
-   	 	</dependencies>
-    </dependencyManagement>
+	<name>TJWspringCloud-RegisterServer</name>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zookeeper-all</artifactId>
-		</dependency>
-		
-	
+	    <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-config</artifactId>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-eureka</artifactId>
+	    </dependency>
 	</dependencies>
 	<build>
 		<resources>
