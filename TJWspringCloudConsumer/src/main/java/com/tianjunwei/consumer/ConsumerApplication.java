@@ -1,4 +1,4 @@
-package com.tianjunwei.zookeeper;
+package com.tianjunwei.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
