@@ -37,11 +37,6 @@
 	</properties>
 	<dependencies>
 		
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zookeeper-all</artifactId>
-		</dependency>
-		
 
 		<!--spring-context -->
 		<dependency>
