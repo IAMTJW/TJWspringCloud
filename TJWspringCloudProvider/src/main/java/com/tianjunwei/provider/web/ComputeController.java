@@ -20,5 +20,11 @@ public class ComputeController {
         Integer r = a + b;
         return r;
     }
+    
+    @RequestMapping(value = "/info" ,method = RequestMethod.GET)
+    public String info(){
+       return "success";
+    }
+    
 
 }
