@@ -1,5 +1,7 @@
 package com.tianjunwei.consumer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,11 +17,13 @@ import zipkin.server.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableZipkinServer
-@EnableDiscoveryClient
 @RestController
 public class SleuthApplication {
 
-	@Bean
+    private final static Logger logger = LoggerFactory.getLogger(SleuthApplication.class);
+
+
+    @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {
         return new RestTemplate();
@@ -33,8 +37,9 @@ public class SleuthApplication {
         return restTemplate.getForEntity("http://computer-service/add?a=10&b=20", String.class).getBody();
     }
 
-    @RequestMapping(value = "/info", method = RequestMethod.GET)
+    @RequestMapping(value = "/traceId", method = RequestMethod.GET)
     public String info() {
+        logger.info("traceId");
         return "success";
     }
 	
