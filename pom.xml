@@ -26,8 +26,17 @@
 	<name>TTspringCloud</name>
 	
 	<modules>
-        <module>springBootLearn1</module>
-        <module>springBootlearn2</module>
+        <module>TJWspringCloud-consul</module>
+		<module>TJWspringCloud-consul - client</module>
+		<module>TJWspringCloud-consumer-feign</module>
+		<module>TJWspringCloud-consumer-ribbon</module>
+		<module>TJWspringCloud-sleuth</module>
+		<module>TJWspringCloud-zookeeper</module>
+		<module>TJWspringCloud-zookeeper-client</module>
+		<module>TJWspringCloud-zuul</module>
+		<module>TJWspringCloudConsumer</module>
+		<module>TJWspringCloudProvider</module>
+		<module>TJWspringCloudServer</module>
     </modules>
 	
 	<properties>
