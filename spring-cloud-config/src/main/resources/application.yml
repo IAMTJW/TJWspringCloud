@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          #github地址，在此工程有一个和应用名一样的spring-cloud-config-server.yml的文件
+          uri: https://github.com/IAMTJW/TJWspringCloud/
+  #          search-paths: repo
+  #          username:
+  #          password:
+
+server:
+  port: 1201

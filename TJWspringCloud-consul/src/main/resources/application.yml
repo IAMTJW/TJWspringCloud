@@ -6,8 +6,8 @@ spring:
       discovery:
         healthCheckPath: /health
         healthCheckInterval: 15s
-        instance-id: consul-miya
+        instance-id: consul-test
   application:
-    name: consul-miya
+    name: consul-test
 server:
   port: 8502
