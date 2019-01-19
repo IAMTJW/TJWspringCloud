@@ -12,4 +12,4 @@ spring:
   #          password:
 
 server:
-  port: 1201
+  port: 8888

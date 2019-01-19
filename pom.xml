@@ -37,8 +37,9 @@
 		<module>TJWspringCloudConsumer</module>
 		<module>TJWspringCloudProvider</module>
 		<module>TJWspringCloudServer</module>
-        <module>spring-cloud-config</module>
-    </modules>
+        <module>spring-cloud-config-server</module>
+		<module>spring-cloud-config-client</module>
+	</modules>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
